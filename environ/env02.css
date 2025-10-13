@@ -146,6 +146,12 @@ p {
     font-weight: 550;
 }
 
+footer {
+    padding: 15px;
+    background: beige;
+    font-family: cursive;
+    border-radius: 20px;
+}
 
 .left {
     display: flex;
@@ -205,3 +211,4 @@ p {
 #squirrel:hover {
     transform: scale(1.1);
 }
+
