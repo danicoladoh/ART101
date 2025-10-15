@@ -49,11 +49,13 @@ p {
     flex-direction: column;
     width: 50%;
     align-items: center;
+
 }
 
 .right {
     width: 30%;
-    align-items: center;
+    align-items: center;   
+    position: fixed;
 }
 
 #home {
@@ -101,4 +103,8 @@ p {
 
 #squirrel:hover {
     transform: scale(1.1);
+}
+
+footer {
+    background-color: #f8ac6e;
 }
