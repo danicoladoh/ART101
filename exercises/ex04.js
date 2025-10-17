@@ -1,24 +1,16 @@
-let totalNumber = 0;
+let count = 0;
 
-//add a button titled try to click me
-$("#needy-button").click( function(){
+let colors = ["Orchid", "Coral", "HotPink", "Plum"];
 
-    totalNumber = totalNumber + 3;
+$("#needy-button").click( function() {
 
-    let sentence ="I said hello ";
+    let reminder = count % colors.length;
 
-    let totalNumbers = sentence + totalNumber;
 
-    $("#needy-button").html(totalNumbers + " times");
-})
+    $("#needy-button").html( "Clicks: " + count + " Color: " + colors[reminder]);
+   
+    $("body").css("background-color", colors[reminder]);
+   
+    count = count + 1;
 
-//when its clicked 
-
-//add one to the total number
-// show how many times
-
-//show the total number
-//on our button
-//show "clicked total times"
-
-//a top limit
+});
