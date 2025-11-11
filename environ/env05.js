@@ -86,12 +86,6 @@ let quiz = [
     {question: "Who lives around 5-10 years?", answer: "squirrel"},
 ];
 
-// AI usage:
-// Prompt: With this js function using jQuery library, how can I add a score of points?
-// Response: ChatGpt made modifications to my code and added the "score++" in my conditional,
-// My changes: I already had a base code so I used AI for the part that wasn't working
-// Reasoning: I wanted to create a minigame inside my website.
-// What code is AI: The modifications related to the score variable.
 
 function askQuestion (ask){
     let userAnswer = prompt(ask.question);
