@@ -113,7 +113,7 @@ $("#elf").click( function() {
 $("#main").hide();
 
 $("#menu button").click( function() {
-    $("#main").show();
-    $("#menu").hide();
+    $("#menu").fadeOut(1000);
+    $("#main").fadeIn(1500);
 });
 
