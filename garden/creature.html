@@ -22,7 +22,10 @@
     <!-- form for creating creatures -->
      <div id="creature-form"> 
         <h2>Add a creature</h2>
-        <input id="crName" type="text">
+        <input id="crName" type="text" maxlength="10">
+        <div>Color: <input id="crColor" type="color" value="#d4ff94"></div>
+        <div>Iris Color: <input id="crIrisColor" type="color" value="#d4ff94"></div>
+        <div>number of eyes <input id="crEyesNum" type="number" max="5" min="0"></div>
         <button id="add-creature">Let it roam!</button>
      </div>
     

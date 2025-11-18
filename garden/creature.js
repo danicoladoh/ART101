@@ -1,19 +1,32 @@
-//a variable for storing names
-
-//when the button is clicked
 $("#add-creature").click(
-    function(){    
-  
-    let crName = $("#crName").val();
+    function () {
 
-    if (crName=="") || (crName.length>11) {};
-    else {
-        $("#creature-list").append(crName + ", ");
-    }
+        // grab the value from the input
+        let crName = $("#crName").val();
+        let crColor= $("#crColor").val();
+        let crIrisColor= $("#crIrisColor").val();
+        let crEyesNum= $("#crEyesNum").val();
+        let crEyesHTML="";
 
-    // remove the name after it's added
-    $("#crName").val("");
+        for (let i = 0; i < crEyesNum ; i++){
+            crEyesHTML=crEyesHTML + "<div class=eye>.</div>";
+        }
 
+        // check for the field value do not add empty ones
+        if ( (crName == "") || (crName.length>12) ) { // do nothing 
+        }
+        else {
+            $("#creature-list").append(`
+            <div class="creature">
+                <div class="creature-body" style="background: ${crColor}">${crEyesHTML}</div>
+                <div class="creature-info">${crName}</div>
+            </div>
+            `);
+        }
 
+        $(".eye").css("background", crIrisColor);
 
-});
+        // remove the name after it's added
+        $("#crName").val("");
+
+    });
